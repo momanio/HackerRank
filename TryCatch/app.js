@@ -31,9 +31,11 @@ function readLine() {
  */
 function reverseString(s) {
   try {
-    console.log(s.split("").reverse().join(""));
+    s.split("");
+    s.reverse();
+    s.join("");
   } catch (e) {
-    console.log("s.split is not a function");
+    console.log(e.message);
     console.log(s);
   }
 }
