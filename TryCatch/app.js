@@ -31,11 +31,10 @@ function readLine() {
  */
 function reverseString(s) {
   try {
-    s.split("");
-    s.reverse();
-    s.join("");
+    s.split("").reverse().join("");
   } catch (e) {
     console.log(e.message);
+  } finally {
     console.log(s);
   }
 }
