@@ -19,6 +19,4 @@ function oldHexColour(c) {
   return 0;
 }
 //The es6 arrow function version
-const hexColour = (c) => {
-  return c < 256 ? Math.abs(c).toString(16) : 0;
-};
+const hexColour = (c) => (c < 256 ? Math.abs(c).toString(16) : 0);
